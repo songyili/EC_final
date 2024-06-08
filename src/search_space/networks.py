@@ -101,5 +101,5 @@ class Network(nn.Module):
         out = self.global_pooling(s1)
         out = out.view(out.size(0), -1)
         logits = self.classifier(out)
-        return out
+        return logits
 
